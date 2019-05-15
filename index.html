@@ -23,23 +23,29 @@
         <main id="app">
             <section id="board">
                 <div id="infos">After Hours</div>
-                <div id="add-task">
-                    <input>
-                    <button>Add a task</button>
+                <div id="add-task-form">
+                    <input id="task-value">
+                    <button id="add-task">Add a task</button>
                 </div>
             </section>
             <section id="columns">
                 <div class="column backlog">
-                    <h3>Backlog</h3>
+                    <h3 class="column-title">Backlog</h3>
+                    <ul class="tasks" id="tasks-added">
+                        <!-- <li class="task">
+                            <div class="task-content">Create repository template with HTML & CSS</div>
+                            <div class="trash">X</div>
+                        </li> -->
+                    </ul>
                 </div>
                 <div class="column todo">
-                    <h3>Todo</h3>
+                    <h3 class="column-title">Todo</h3>
                 </div>
                 <div class="column review">
-                    <h3>Review</h3>
+                    <h3 class="column-title">Review</h3>
                 </div>
                 <div class="column done">
-                    <h3>Done</h3>
+                    <h3 class="column-title">Done</h3>
                 </div>
             </section>
         </main>

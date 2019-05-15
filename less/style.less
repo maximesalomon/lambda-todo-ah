@@ -50,4 +50,36 @@ body {
     &:nth-child(1) {
         margin-left: 0px;
     }
+    &:hover {
+        border: solid 2px blue;
+    }
+}
+
+.column-title {
+    margin: 24px 0px 0px 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.task {
+    margin: 16px 0px 0px 24px;
+    padding: 10px 0px 0px 10px;
+    position:relative;
+    &:nth-child(1) {
+        margin-top: 32px;
+    }
+    height: 80px;
+    width: 288px;
+    border: 1px solid grey;
+    .task-content {
+        margin: 16px 16px 0 16px;
+    } &:hover {
+        border: solid 1px blue;
+    }
+    .trash {
+        position:absolute;
+        bottom: 8px;
+        right: 8px;
+    }
 }
