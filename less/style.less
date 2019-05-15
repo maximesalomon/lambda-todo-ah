@@ -1,0 +1,53 @@
+@import "reset.less";
+
+//////////////////
+
+/// NAVBAR
+
+header {
+    display: flex;
+    background-color: white;
+    height: 70px;
+    border-bottom: solid 1px lightgray;
+}
+
+#navbar {
+    display: flex;
+}
+
+/// APP
+
+body {
+    background-color: #F5F7FA;
+}
+
+#app {
+    margin-left: 100px;
+}
+
+#board {
+    margin-top: 60px;
+    display: flex;
+}
+
+/// COLUMNS
+
+#columns {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    overflow: auto;
+}
+
+.column {
+    flex: 0 0 auto;
+    width: 340px;
+    height: 520px;
+    border: solid 1px gray;
+    margin-left: 40px;
+    &:nth-child(1) {
+        margin-left: 0px;
+    }
+}
