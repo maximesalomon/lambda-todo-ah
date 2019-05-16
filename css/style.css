@@ -340,7 +340,7 @@ body {
   color: #c42d1c;
 }
 .hold:active:hover {
-  border: solid 3px blue;
+  border: solid 3px #4786FF;
 }
 .hovered {
   border-style: dashed;
