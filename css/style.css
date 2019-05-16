@@ -159,6 +159,7 @@ body {
   height: 520px;
   border: solid 1px gray;
   margin-left: 40px;
+  background-color: white;
 }
 .column:nth-child(1) {
   margin-left: 0px;
@@ -173,9 +174,11 @@ body {
   font-size: 24px;
 }
 .task {
+  list-style-type: none;
   margin: 16px 0px 0px 24px;
   padding: 10px 0px 0px 10px;
   position: relative;
+  background-color: white;
   height: 80px;
   width: 288px;
   border: 1px solid grey;
@@ -193,4 +196,13 @@ body {
   position: absolute;
   bottom: 8px;
   right: 8px;
+}
+.hold:active:hover {
+  border: solid 3px blue;
+}
+.hovered {
+  border-style: dashed;
+}
+.invisible {
+  display: none;
 }

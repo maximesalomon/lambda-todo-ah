@@ -47,6 +47,7 @@ body {
     height: 520px;
     border: solid 1px gray;
     margin-left: 40px;
+    background-color: white;
     &:nth-child(1) {
         margin-left: 0px;
     }
@@ -63,9 +64,11 @@ body {
 }
 
 .task {
+    list-style-type: none;
     margin: 16px 0px 0px 24px;
     padding: 10px 0px 0px 10px;
     position:relative;
+    background-color: white;
     &:nth-child(1) {
         margin-top: 32px;
     }
@@ -82,4 +85,18 @@ body {
         bottom: 8px;
         right: 8px;
     }
+}
+
+.hold {
+    &:active:hover {
+        border: solid 3px blue;
+    }
+}
+
+.hovered {
+    border-style: dashed;
+}
+
+.invisible {
+    display: none;
 }
