@@ -15,7 +15,25 @@ document.getElementById('add-task').addEventListener('click', function() {
 // Create a function addTask
 
 const addTask = taskValue => {
-    
+    let task = document.createElement('li');
+    task.classList.add('task');
+    task.classList.add('fill');
+    // task.setAttribute('draggable', 'true');
+    task.draggable = true;
+
+    let taskContent = document.createElement('div');
+    taskContent.classList.add("task-content");
+    taskContent.innerText = taskValue;
+
+    let trash = document.createElement('div');
+    trash.classList.add('trash');
+    trash.innerText = "X";
+
+    task.appendChild(taskContent);
+    task.appendChild(trash);
+
+    let tasks = document.getElementById('tasks-added');
+    tasks.prepend(task);
   }
 
 
