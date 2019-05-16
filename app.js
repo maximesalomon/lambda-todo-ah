@@ -1,15 +1,18 @@
-const trash = "https://image.flaticon.com/icons/svg/1214/1214428.svg";
+// const trash = "https://image.flaticon.com/icons/svg/1214/1214428.svg";
 
 // Add an event listener to the #add-task input field
 // Only addTask if there is text in the input
 // Remove the task text in the input once its added
 
-
-
+document.getElementById('add-task').addEventListener('click', function() {
+    let taskValue = document.getElementById('task-value').value;
+    console.log(taskValue);
+})
 
 ////// TASK FUNCTIONS
 
 // Create a function addTask
+
 
 
 
