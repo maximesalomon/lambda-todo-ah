@@ -22,9 +22,11 @@ const addTask = (taskValue) => {
     task.appendChild(trash);
 
     let tasks = document.getElementById('tasks-added');
-    tasks.appendChild(task)
+    tasks.insertBefore(task, tasks.childNodes[0]);
 }
 
-const removeTask = () => {
-    alert("Task has been removed");
+const removeTask = (event) => {
+    let tasks = event.target.parentNode.parentNode;
+    let task = event.target.parentNode;
+    tasks.removeChild(li);
 }
