@@ -6,8 +6,8 @@
 
 document.getElementById('add-task').addEventListener('click', function() {
     let taskValue = document.getElementById('task-value').value;
-    console.log(taskValue);
-    addTask(taskValue);
+    if (taskValue) addTask(taskValue);
+    document.getElementById('task-value').value = '';
 })
 
 ////// TASK FUNCTIONS
@@ -28,6 +28,8 @@ const addTask = taskValue => {
     let trash = document.createElement('div');
     trash.classList.add('trash');
     trash.innerText = "X";
+    trash.addEventListener('click', removeTask);
+
 
     task.appendChild(taskContent);
     task.appendChild(trash);
@@ -39,8 +41,10 @@ const addTask = taskValue => {
 
 // Create a function removeTask
 
-
-
+const removeTask = (event) => {
+    let task = event.target.parentNode;
+    task.remove();
+}
 
 ////// DRAG & DROP
 
