@@ -1,3 +1,4 @@
+const trash = "https://image.flaticon.com/icons/svg/1214/1214428.svg"
 
 document.getElementById('add-task').addEventListener('click', function() {
     let taskValue = document.getElementById('task-value').value;
@@ -19,7 +20,7 @@ const addTask = (taskValue) => {
     
     let trash = document.createElement('div');
     trash.classList.add('trash');
-    trash.innerText = 'X';
+    trash.innerText = "X";
     trash.addEventListener('click', removeTask);
 
     task.appendChild(taskContent);
