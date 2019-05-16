@@ -57,7 +57,9 @@ const dropzones = document.querySelectorAll('.dropzone');
 const dragEnter = (event) => {
     // console.log("ENTER");
     event.preventDefault();
-    event.target.className += ' hovered';
+    if(event.target.className === "column dropzone") {
+        event.target.className += ' hovered';   
+    }
 }
 
 const dragOver = (event) => {
@@ -67,12 +69,16 @@ const dragOver = (event) => {
 
 const dragLeave = (event) => {
     // console.log("LEAVE");
-    event.target.className = " column dropzone"
+    if(event.target.className === "column dropzone hovered") {
+        event.target.className = "column dropzone"
+    }
 }
 
 const dragDrop = (event) => {
     // console.log("DROP");
-    event.target.className = " column dropzone"
+    if(event.target.className === "column dropzone hovered") {
+        event.target.className = "column dropzone"
+    }
     event.target.append(task);
 }
 
