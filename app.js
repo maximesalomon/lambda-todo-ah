@@ -7,14 +7,16 @@
 document.getElementById('add-task').addEventListener('click', function() {
     let taskValue = document.getElementById('task-value').value;
     console.log(taskValue);
+    addTask(taskValue);
 })
 
 ////// TASK FUNCTIONS
 
 // Create a function addTask
 
-
-
+const addTask = taskValue => {
+    
+  }
 
 
 // Create a function removeTask
