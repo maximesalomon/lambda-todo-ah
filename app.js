@@ -18,8 +18,9 @@ const addTask = taskValue => {
     let task = document.createElement('li');
     task.classList.add('task');
     task.classList.add('fill');
-    // task.setAttribute('draggable', 'true');
     task.draggable = true;
+    task.addEventListener('dragstart', dragStart);
+    task.addEventListener('dragend', dragEnd);
 
     let taskContent = document.createElement('div');
     taskContent.classList.add("task-content");
@@ -49,17 +50,25 @@ const removeTask = (event) => {
 ////// DRAG & DROP
 
 // Create a variable task to store the selected task
-
+let task;
 
 // Add an event listener dragstart to task
 
+const dragStart = (event) => {
+    console.log("START")
+    event.target.className += ' hold';
+    task = event.target;
+    setTimeout(() => (event.target.className = "invisible"), 0);
 
-
-// Create a dragStart function
+}
 
 
 // Create a dragEnd function
 
+const dragEnd = () => {
+    console.log("END")
+    event.target.className = 'task fill';
+}
 
 // Create dropzones by selecting .dropzone
 
