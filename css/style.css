@@ -145,6 +145,62 @@ body {
   margin-top: 60px;
   display: flex;
 }
+#infos {
+  display: flex;
+}
+#infos .square {
+  height: 50px;
+  width: 50px;
+  border-radius: 4px;
+  background-color: #4786FF;
+  box-shadow: 0px 4px 20px rgba(71, 134, 255, 0.5);
+}
+#infos .square #letter {
+  font-size: 36px;
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
+  color: white;
+  font-weight: 900;
+  margin: 5px 0px 0px 16px;
+}
+#infos #infos-content {
+  margin-left: 24px;
+}
+#infos .infos-title {
+  font-family: 'Lato';
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #1B2437;
+}
+#infos .infos-company {
+  font-family: 'Lato';
+  font-style: italic;
+  font-size: 16px;
+  line-height: 19px;
+  color: #AAACAF;
+}
+#add-task-form {
+  position: absolute;
+  right: 100px;
+  display: flex;
+}
+#add-task-form #task-value {
+  height: 45px;
+  width: 240px;
+  border-radius: 0px;
+  margin-right: 8px;
+}
+#add-task-form #add-task {
+  background: #4786FF;
+  border-radius: 4px;
+  width: 50px;
+  height: 50px;
+  font-family: Lato;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 29px;
+  color: #FFFFFF;
+}
 #columns {
   margin-top: 40px;
   display: flex;
